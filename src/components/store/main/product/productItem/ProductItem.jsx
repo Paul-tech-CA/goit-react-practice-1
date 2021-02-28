@@ -13,12 +13,12 @@ const ProductItem = ({
 }) => {
   return (
     <ProductItemContainer>
-      <li>
+      <li className="product_item">
         <p>- {name}</p>
         <p>- {price}</p>
         <p>- {avatar}</p>
         <p>- {description}</p>
-        <p>- {sale}</p>
+        <p>- {sale ? "on Sale" : "no discount :("}</p>
         <p>- {category}</p>
         <button onClick={() => onHandleRemove(id)}>Delete</button>
       </li>
