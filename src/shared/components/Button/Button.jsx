@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Button = ({className, disabled, children}) => {
-    return (
-        <button type="button" className={className} disabled={disabled}>
-            {children}
-        </button>
-    );
+const Button = ({ type = "button", className, disabled = false, children }) => {
+  return (
+    <button type={type} className={className} disabled={disabled}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

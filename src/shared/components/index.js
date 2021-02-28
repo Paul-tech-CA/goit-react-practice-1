@@ -1,10 +1,1 @@
-// export { default as Button } from './Button/Button';
-// export { default as Modal } from './Modal/Modal';
-
-import Button from "./Button";
-import Modal from "./Modal";
-
-export {
-    Button,
-    Modal
-}
+export { default as Button } from "./Button";
